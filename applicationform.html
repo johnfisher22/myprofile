@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html>
+<head>
+ <!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>New Client Registration Form </title>
+   <link rel ="stylesheet" type="text/css" href="appform.css">
+</head>
+<body>
+  <header>
+   <img  src = "businessoffice.jpg">
+
+   </header>
+  <nav class = "navbar">
+  <nav>
+    <ul>
+    <li><a href="index.html">Home Page</a></li>
+    <li><a href="https://wehopeforcare.org" target="_blank">NGO Project</a></li>
+   <li><a href="https://markingthedifference.com/" target="_blank">Staffing Agency Project</a></li> 
+     
+    </ul>
+  </nav>
+  <div>
+  <section>
+    <h2>AJAX APARTMENTS Inc. </h2>
+  </section>
+ </div><br><br>
+
+
+<form action="submit.html" method="POST" enctype="multipart/form-data"> 
+ <fieldset>   
+    <legend>New Customer Registration Form:</legend>  
+    <label for="fname">First name:</label>
+    <input type="text" name="fname" id="fname" required><br><br> 
+    
+    <label for="lname">Last name:</label>
+    <input type="text" name="lname" id="lname" required><br><br>
+    <label for="user">User Name:</label>
+    <input type="text" name="user" id="user" required><br><br>
+    <label>   
+     Choose Password
+    <input type="password" name="password" required>
+    </label><br><br>
+
+    <label for="email">Email:</label>
+    <input type="email" name="email" id="email" required><br><br>
+     <label for="phone">Phone Number:</label>
+    <input type="tel" name="phone" id="phone" required><br><br>
+    <label for="birthday">Birthday:</label>
+    <input type="date" name="birthday" id="birthday" required min="1900-01-01"><br><br>
+    
+     Gender <br><br>
+    <label for="male">Male</label>
+    <input type="radio" name="gender" id="male" value="male"><br><br>
+    <label for="Female">Female</label>
+    <input type="radio" name="gender" id="female" value="female"><br><br>
+
+     Choose Update Type <br><br>
+    <label for="email">Email</label>
+    <input type="checkbox" name="email" id="email"><br><br>
+    <label for="regular mail">Regular Mail</label>
+    <input type="checkbox" name="regular mail" id="regular male"><br><br>
+    
+    <label for="eyeColor">Eye Color</label><br><br>
+    <select name="eyeColor" id="eyeColor" required> 
+     
+    <option value="Black">Black</option>
+    <option label1="Brown" value="Brown">Brown</option>
+    <option label2="Blue" value="Blue">Blue</option>
+    <option label3="Others" value="Others">Others</option>
+  </select>
+    <br><br>
+       <label for="url">Your Website URL</label>
+      <input type="url" name="url" id="url" ><br>
+      Optional<br><br>
+      
+      <label for="file">Upload Your Documents</label><br><br>
+      <input id="file" type="file" name="file" required><br><br>
+
+      <label for="membership">Your Employer's Info & Monthly Income Amount</label><br><br>
+      <textarea id="membership" name="membership" required> </textarea><br><br>
+
+      <label for="color">Select Your Favorite Color?</label><br>
+      Optional<br>
+      <input type="color" name="membership" id="membership"> </textarea><br><br>
+
+    <button type="reset">Reset</button><br><br>
+    <input type="submit" value="Submit">
+  </fieldset>  
+</form>
+
+
+
+   <footer>
+   <h4 style="font-size: 18px; ">Contact Information</h4>
+<p> Suit 1226, Bishop Avenue, Bismarck, ND, 58503       Tel: 701 555 7688     Email: info@ajaxinc.com   ©</p>
+  </footer>
+
+</body>
+</html>

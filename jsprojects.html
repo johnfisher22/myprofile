@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>JavaScript Projects</title>
+   <link rel ="stylesheet" type="text/css" href="jsprojects.css">
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+     
+    <script src="jsprojects.js"></script>
+</head>
+<body>
+  <header>
+    <img  src = "UchemUJ.png">
+   <h1>Uchem Johnfisher - Software Programming Portfolio</h1>
+   
+   <nav class = "navbar" id="mynavbar">
+    
+    <input type="checkbox" id="check">
+    <label for="check" class="checkbtn">
+        <i class="fas fa-bars"></i>
+    </label>
+
+     <ul>
+     <li><a href="index.html">Home Page</a></li>
+     <li><a href="https://markingthedifference.com/" target="_blank">NGO Project</a></li> 
+     <li><a href="https://wehopeforcare.org/" target="_blank">Staffing Agency Project</a></li>
+
+    </a>
+  
+     
+     </ul>
+   </nav>
+ </header>
+ 
+ <div id="clockContainer">
+  <div id="hour"></div>
+  <div id="minute"></div>
+  <div id="second"></div>
+</div>
+
+ <h2>My JavaScript Playground</h2>
+
+<div id="currentTime"></div>
+    <script>
+      const element = document.getElementById('currentTime');
+      
+      setInterval(function () {
+        const currentDate = new Date();
+        element.innerText = currentDate.getHours() + ":" + currentDate.getMinutes() + ":" + currentDate.getSeconds();
+      }, 1000);
+    </script>
+
+  <div> 
+  <p Id="stage"></p>
+  <p id="hide">Screen display for JavaScript apps below</p>
+</div> 
+
+<div class="text1">
+  <div id="p1">
+ <p>Vending Machine</p>
+<button onclick="chooseDrink();">Buy drinks</button>
+</div>
+
+<div id="p2">
+ <p>Number Calculator</p>
+<button onclick=" useCalculator()">Calculator</button>
+</div>
+
+<div id="p3">
+ <p>Manage Account</p>
+<button  onclick="accountTransactions() ">Account Manager</button>
+</div>
+
+<div id="p4">
+ <p>Number Game</p>
+<button  onclick="isOddOrEvenNumber()">Even & Odd</button>
+</div>
+
+<div id="p5">
+ <p>Temp. Converter</p>
+<button onclick="tempConversion()">Convert</button>
+</div>
+
+</div>
+
+<br>
+<button id="clear" onclick="clearScreen()">clear Screen</button>
+<br>
+
+<button id="show-image-button" onclick="showImage()">Rabbit Race</button>
+   <img id="my-image" src= "movie.gif" >
+
+   
+</body>
+</html>  
+
+
+
+
